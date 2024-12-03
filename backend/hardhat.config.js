@@ -1,12 +1,10 @@
-// hardhat.config.js
-
 require("dotenv").config();
-r; //equire("@nomicfoundation/hardhat-toolbox");
+require("@nomiclabs/hardhat-ethers");
 
 const { API_URL, PRIVATE_KEY } = process.env;
 
 module.exports = {
-  solidity: "0.8.24",
+  solidity: "0.8.0",
   defaultNetwork: "sepolia",
   networks: {
     hardhat: {},

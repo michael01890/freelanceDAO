@@ -1,0 +1,75 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/ming/Documents/Projects/Blockchain Class/freelanceDAO/backend/contracts/FreelanceDAO.sol": {
+      "lastModificationDate": 1733255329548,
+      "contentHash": "1693a6280808d577e45a2680efff5b12",
+      "sourceName": "contracts/FreelanceDAO.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FreelanceDAO"
+      ]
+    },
+    "/Users/ming/Documents/Projects/Blockchain Class/freelanceDAO/backend/contracts/UserProfile.sol": {
+      "lastModificationDate": 1733196958127,
+      "contentHash": "73c6589b7e725351e80fa1035efda7d2",
+      "sourceName": "contracts/UserProfile.sol",
+      "solcConfig": {
+        "version": "0.8.0",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "UserProfile"
+      ]
+    }
+  }
+}
