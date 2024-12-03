@@ -1,7 +1,7 @@
-// hardhat.config.js
+// hardhat.config.cjs
 
 require("dotenv").config();
-r; //equire("@nomicfoundation/hardhat-toolbox");
+require("@nomicfoundation/hardhat-toolbox");
 
 const { API_URL, PRIVATE_KEY } = process.env;
 

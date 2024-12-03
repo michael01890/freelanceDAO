@@ -1,7 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
-
-
+pragma solidity ^0.8.20;
 
 contract FreelanceDAO {
     struct Project {
@@ -31,24 +29,32 @@ contract FreelanceDAO {
         nextProjectId++;
     }
 
-
     function markAsCompleted(uint256 projectId) public {
         Project storage project = projects[projectId];
-        require(msg.sender == project.freelancer, "Only the freelancer can mark as complete");
+        require(
+            msg.sender == project.freelancer,
+            "Only the freelancer can mark as complete"
+        );
         require(!project.isCompleted, "Project already completed");
         project.isCompleted = true;
     }
 
     function confirmCompletion(uint256 projectId) public {
         Project storage project = projects[projectId];
-        require(msg.sender == project.client, "Only the client can confirm completion");
+        require(
+            msg.sender == project.client,
+            "Only the client can confirm completion"
+        );
         require(project.isCompleted, "Project not marked as completed");
         payable(project.freelancer).transfer(project.amount);
     }
 
     function raiseDispute(uint256 projectId) public {
         Project storage project = projects[projectId];
-        require(msg.sender == project.client || msg.sender == project.freelancer, "Only client or freelancer can raise dispute");
+        require(
+            msg.sender == project.client || msg.sender == project.freelancer,
+            "Only client or freelancer can raise dispute"
+        );
         require(!project.isCompleted, "Cannot dispute a completed project");
         project.isDisputed = true;
     }
