@@ -51,7 +51,7 @@ contract FreelanceDAO {
             amount: amount,
             name: name,
             description: description,
-            deadline: 0,
+            deadline: block.timestamp + 3600, // Set a 1-hour deadline for testing
             isCompleted: false,
             isDisputed: false,
             isAccepted: false

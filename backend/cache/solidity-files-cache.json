@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/ming/Documents/Projects/Blockchain Class/freelanceDAO/backend/contracts/FreelanceDAO.sol": {
-      "lastModificationDate": 1733255329548,
-      "contentHash": "1693a6280808d577e45a2680efff5b12",
+      "lastModificationDate": 1733340458835,
+      "contentHash": "6e69453d2b9f2621c19f9dd11f6c5cd5",
       "sourceName": "contracts/FreelanceDAO.sol",
       "solcConfig": {
         "version": "0.8.0",
